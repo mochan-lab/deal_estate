@@ -1,0 +1,27 @@
+nav {
+  text-align: left;
+}
+
+nav ul {
+  margin: 10px;
+  padding: 10px;
+}
+
+nav ul li{
+  background-color: gray;
+  text-align: center;
+  font-size: large;
+  list-style: none;
+  display: inline-block;
+  width: 15%;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}

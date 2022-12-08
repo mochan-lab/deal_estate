@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>DealEstate-MyEstates</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    
+    <script type="text/javascript" src="./deal_estate.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <h1>DealEstate -MyEstates</h1>
+      <div id="contract_init">loading......</div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Top - Released</a></li>
+        <li><a href="myEstate.html">My Estates</a></li>
+      </ul>
+    </nav>
+    <section><fieldset>
+      <legend><h2>Register New Estate</h2></legend>
+      <form>
+        <label for="name">Name</label><input type="text" name="name" required><br>
+        <label for="name">Address</label><input type="text" name="address" size="80" required><br>
+        <label for="price">Price (ETH)</label><input type="number" name="price" required value="0"><br>
+        <input type="submit" value="Register">
+      </form>
+    </section></fieldset>
+    <section>
+      <h2>My Estates List</h2>
+      <table id="dataTable" class="display" style="width:100%;">
+      <thead>
+        <tr>
+          <th>Key</th><th>Name</th><th>Address</th><th>Price (ETH)</th><th>isReleased</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>-1</td><td>loading</td><td>loading</td><td><a href="#">-1</a></td><td><a href="#">true</a></td>
+        </tr>
+        <tr>
+          <td>-1</td><td>loading</td><td>loading</td><td><a href="#">-1</a></td><td><a href="#">false</a></td>
+        </tr>
+      </tbody>
+      </table>
+    </section>
+  </body>
+</html>
